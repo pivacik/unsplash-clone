@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  padding: 2rem;
+}
+
+#logo {
+  text-decoration: none;
+  color: rgb(22, 61, 77);
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+.search-form input {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border: 1px solid rgb(22, 61, 77);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.search-form button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background: rgb(22, 61, 77);
+  color: white;
+  cursor: pointer;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(64, 73, 77);
+  padding: 0.5rem 0;
+}
+
+.gallery-info a {
+  color: rgb(64, 73, 77);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 4rem;
+  column-gap: 3rem;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-button {
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: rgb(22, 61, 77);
+  color: white;
+  cursor: pointer;
+  font-family: "Sen", sans-serif;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+
+.error-msg {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
