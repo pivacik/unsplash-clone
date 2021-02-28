@@ -52,7 +52,7 @@ function generateError(query) {
   errorMsg.classList.add("error-msg");
   errorMsg.innerHTML = `<p>Your search - ${query} - didn't match any images</p>`;
   handler.append(errorMsg);
-  moreButton.classList.add("hide");
+  moreButton.classList.add("hide-more");
 }
 
 function removeError() {
@@ -60,7 +60,7 @@ function removeError() {
     console.log("IT HAS??");
     handler.children[0].remove();
   }
-  moreButton.classList.remove("hide");
+  moreButton.classList.remove("hide-more");
 }
 
 async function curatedPhotos() {
